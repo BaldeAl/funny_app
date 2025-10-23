@@ -1,0 +1,32 @@
+{
+  "name": "cosmic-quest-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@vueuse/core": "^14.0.0",
+    "axios": "^1.12.2",
+    "canvas-confetti": "^1.9.3",
+    "pinia": "^3.0.3",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.15",
+    "@tailwindcss/vite": "^4.1.16",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.15",
+    "vite": "^7.1.7",
+    "vite-plugin-vue-devtools": "^8.0.2"
+  }
+}

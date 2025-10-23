@@ -1,0 +1,8 @@
+nelmio_cors:
+  defaults:
+    allow_origin: ['http://localhost:5173']
+    allow_methods: ['GET', 'POST']
+    allow_headers: ['Content-Type']
+    max_age: 3600
+  paths:
+    '^/api/': ~
