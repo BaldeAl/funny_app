@@ -2,9 +2,9 @@
 
 > Transformez vos tâches ennuyeuses en quêtes épiques avec l'intelligence artificielle
 
-[![Vue.js](https://img.shields.io/badge/Vue.js-3.4-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org)
-[![Symfony](https://img.shields.io/badge/Symfony-7.0-000000?style=flat-square&logo=symfony)](https://symfony.com)
-[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
+[![Vue.js](https://img.shields.io/badge/Vue.js-3.5-4FC08D?style=flat-square&logo=vue.js)](https://vuejs.org)
+[![Symfony](https://img.shields.io/badge/Symfony-7.3-000000?style=flat-square&logo=symfony)](https://symfony.com)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC?style=flat-square&logo=tailwind-css)](https://tailwindcss.com)
 
 ## 📝 Description
 
