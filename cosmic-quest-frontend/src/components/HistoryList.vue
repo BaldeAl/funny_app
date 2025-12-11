@@ -1,5 +1,5 @@
 <template>
-  <transition-group name="list" tag="div" class="space-y-3">
+  <transition-group name="list" tag="div" class="space-y-4">
     <HistoryItem
       v-for="(item, index) in items"
       :key="item.id || index"
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import HistoryItem from './HistoryItem.vue'
+import HistoryItem from './Historyitem.vue'
 
 defineProps({
   items: Array
@@ -26,16 +26,16 @@ defineEmits(['delete', 'copy'])
 .list-enter-active,
 .list-leave-active,
 .list-move {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .list-enter-from {
   opacity: 0;
-  transform: translateY(-10px);
+  transform: translateY(-15px) scale(0.95);
 }
 
 .list-leave-to {
   opacity: 0;
-  transform: translateX(20px);
+  transform: translateX(30px) scale(0.95);
 }
 </style>

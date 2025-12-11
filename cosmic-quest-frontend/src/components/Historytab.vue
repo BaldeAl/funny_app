@@ -31,11 +31,11 @@
 
 <script setup>
 import { ref, computed, inject } from 'vue'
-import HistoryHeader from './HistoryHeader.vue'
-import HistorySearch from './HistorySearch.vue'
-import HistoryEmpty from './HistoryEmpty.vue'
+import HistoryHeader from './Historyheader.vue'
+import HistorySearch from './Historysearch.vue'
+import HistoryEmpty from './Historyempty.vue'
 import HistoryList from './HistoryList.vue'
-import HistoryActions from './HistoryActions.vue'
+import HistoryActions from './Historyactions.vue'
 
 const props = defineProps({
   history: Array,

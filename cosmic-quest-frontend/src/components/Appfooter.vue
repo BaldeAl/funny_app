@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-8 text-center">
-    <p class="text-gray-400 text-sm">
+  <div class="mt-10 text-center">
+    <p class="text-sm font-medium" style="color: #B2BEC3;">
       Propulsé par l'IA • {{ currentYear }} TaskMaster
     </p>
   </div>

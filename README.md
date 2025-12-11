@@ -8,8 +8,14 @@
 
 ## 📝 Description
 
-**Funny App** est une application web moderne qui utilise l'IA Google Gemini pour transformer vos tâches quotidiennes en aventures épiques. Chaque tâche devient une quête héroïque avec des récompenses cosmiques.
+**TaskMaster AI** est une application web moderne qui utilise l'IA Google Gemini pour transformer vos tâches quotidiennes en aventures épiques. Chaque tâche devient une quête héroïque avec des récompenses cosmiques.
+![alt text](image-1.png)
 
+----
+
+![alt text](image.png)
+
+----
 ## 🏗️ Structure du Projet
 
 ```

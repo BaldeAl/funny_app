@@ -1,16 +1,18 @@
 <template>
-  <div class="flex justify-center gap-4 mb-6">
+  <div class="flex justify-center gap-6 mb-6 p-4 rounded-2xl" style="background: #FEFBF6; border: 2px solid #F5E6D8;">
     <div class="text-center">
-      <div class="text-2xl font-bold text-purple-400">+1</div>
-      <div class="text-xs text-gray-400">XP Gagné</div>
+      <div class="text-2xl font-black" style="color: #FF7B54;">+1</div>
+      <div class="text-xs font-semibold" style="color: #B2BEC3;">XP Gagné</div>
     </div>
+    <div class="w-px self-stretch" style="background: #E8E4DF;"></div>
     <div class="text-center">
-      <div class="text-2xl font-bold text-pink-400">{{ karma }}</div>
-      <div class="text-xs text-gray-400">Karma Total</div>
+      <div class="text-2xl font-black" style="color: #86D4A3;">{{ karma }}</div>
+      <div class="text-xs font-semibold" style="color: #B2BEC3;">Karma Total</div>
     </div>
+    <div class="w-px self-stretch" style="background: #E8E4DF;"></div>
     <div class="text-center">
-      <div class="text-2xl font-bold text-indigo-400">{{ historyCount }}</div>
-      <div class="text-xs text-gray-400">Quêtes</div>
+      <div class="text-2xl font-black" style="color: #B8A9E5;">{{ historyCount }}</div>
+      <div class="text-xs font-semibold" style="color: #B2BEC3;">Quêtes</div>
     </div>
   </div>
 </template>

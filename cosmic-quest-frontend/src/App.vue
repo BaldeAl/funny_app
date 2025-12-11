@@ -1,11 +1,11 @@
 <template>
-  <div class="min-h-screen relative overflow-hidden bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
+  <div class="min-h-screen relative overflow-hidden" style="background: linear-gradient(135deg, #FFF8F0 0%, #FEFBF6 50%, #FFF0E6 100%);">
     <BackgroundStars />
     
     <div class="relative z-10 min-h-screen flex flex-col items-center justify-center p-4 md:p-6">
       <AppHeader />
       
-      <div class="w-full max-w-2xl bg-white/10 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 overflow-hidden">
+      <div class="w-full max-w-2xl card-3d overflow-hidden" style="background: #FFFFFF; border: 4px solid #F5E6D8;">
         <NavigationTabs 
           :active-tab="activeTab" 
           :history-count="historyCount"
@@ -40,13 +40,13 @@
 
 <script setup>
 import { ref, computed, onMounted, watch, provide } from 'vue'
-import BackgroundStars from './components/BackgroundStars.vue'
-import AppHeader from './components/AppHeader.vue'
-import AppFooter from './components/AppFooter.vue'
-import NavigationTabs from './components/NavigationTabs.vue'
-import BoostTab from './components/BoostTab.vue'
-import HistoryTab from './components/HistoryTab.vue'
-import ToastNotification from './components/ToastNotification.vue'
+import BackgroundStars from './components/Backgroundstars.vue'
+import AppHeader from './components/Appheader.vue'
+import AppFooter from './components/Appfooter.vue'
+import NavigationTabs from './components/Navigationtabs.vue'
+import BoostTab from './components/Boostab.vue'
+import HistoryTab from './components/Historytab.vue'
+import ToastNotification from './components/Toastnotification.vue'
 
 const activeTab = ref('boost')
 const history = ref([])
@@ -85,16 +85,16 @@ const handleQuestCreated = (quest) => {
 <style>
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .slide-fade-enter-from {
-  transform: translateX(20px);
+  transform: translateX(20px) scale(0.95);
   opacity: 0;
 }
 
 .slide-fade-leave-to {
-  transform: translateX(-20px);
+  transform: translateX(-20px) scale(0.95);
   opacity: 0;
 }
 </style>

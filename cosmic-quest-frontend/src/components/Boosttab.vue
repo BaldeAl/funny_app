@@ -39,11 +39,11 @@
 import { ref, inject } from 'vue'
 import axios from 'axios'
 import confetti from 'canvas-confetti'
-import TaskInput from './TaskInput.vue'
-import QuickSuggestions from './QuickSuggestions.vue'
-import GenerateButton from './GenerateButton.vue'
-import QuestResult from './QuestResult.vue'
-import ErrorMessage from './ErrorMessage.vue'
+import TaskInput from './Taskinput.vue'
+import QuickSuggestions from './Quicksuggestions.vue'
+import GenerateButton from './Generatebutton.vue'
+import QuestResult from './Questresult.vue'
+import ErrorMessage from './Errormessage.vue'
 
 const emit = defineEmits(['quest-created'])
 const showToast = inject('showToast')
@@ -88,7 +88,7 @@ const generate = async () => {
       particleCount: 100,
       spread: 70,
       origin: { y: 0.6 },
-      colors: ['#a78bfa', '#ec4899', '#6366f1']
+      colors: ['#FF7B54', '#86D4A3', '#B8A9E5', '#FFB996', '#87CEEB']
     })
     
     showToast('✨', 'Nouvelle quête créée avec succès !')

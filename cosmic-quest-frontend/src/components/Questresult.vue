@@ -1,16 +1,16 @@
 <template>
-  <div class="space-y-4 animate-fadeIn">
+  <div class="space-y-4 animate-pop-in">
     <QuestStats 
       :karma="karma"
       :history-count="historyCount"
     />
     
-    <div class="space-y-3">
+    <div class="space-y-4">
       <ResultCard
         icon="⚔️"
         title="Mission Épique"
         :content="result.quest"
-        color="purple"
+        color="coral"
         :is-new="true"
       />
       
@@ -18,27 +18,33 @@
         icon="🏆"
         title="Boost d'Ego"
         :content="result.compliment"
-        color="pink"
+        color="mint"
       />
       
       <ResultCard
         icon="🛡️"
         title="Plan de Secours"
         :content="result.excuse"
-        color="indigo"
+        color="lavender"
       />
     </div>
     
     <div class="flex gap-3 pt-4">
       <button
         @click="$emit('share')"
-        class="flex-1 py-2 bg-white/10 hover:bg-white/20 rounded-xl text-gray-300 font-medium transition-all hover:scale-105"
+        class="flex-1 py-3 rounded-xl font-bold transition-all duration-200"
+        style="background: #FEFBF6; border: 3px solid #E8E4DF; color: #636E72; box-shadow: 0 4px 0 rgba(0,0,0,0.05);"
+        @mouseenter="$event.target.style.transform = 'translateY(-2px)'; $event.target.style.boxShadow = '0 6px 0 rgba(0,0,0,0.08)'"
+        @mouseleave="$event.target.style.transform = 'translateY(0)'; $event.target.style.boxShadow = '0 4px 0 rgba(0,0,0,0.05)'"
       >
         Partager 📤
       </button>
       <button
         @click="$emit('reset')"
-        class="flex-1 py-2 bg-gradient-to-r from-purple-600/50 to-pink-600/50 hover:from-purple-600 hover:to-pink-600 rounded-xl text-white font-medium transition-all hover:scale-105"
+        class="flex-1 py-3 rounded-xl font-bold transition-all duration-200"
+        style="background: linear-gradient(145deg, #86D4A3, #A8E6C3); color: white; box-shadow: 0 6px 0 rgba(134, 212, 163, 0.3);"
+        @mouseenter="$event.target.style.transform = 'translateY(-2px)'; $event.target.style.boxShadow = '0 8px 0 rgba(134, 212, 163, 0.3)'"
+        @mouseleave="$event.target.style.transform = 'translateY(0)'; $event.target.style.boxShadow = '0 6px 0 rgba(134, 212, 163, 0.3)'"
       >
         Nouvelle Quête ✨
       </button>
@@ -47,8 +53,8 @@
 </template>
 
 <script setup>
-import QuestStats from './QuestStats.vue'
-import ResultCard from './ResultCard.vue'
+import QuestStats from './Queststats.vue'
+import ResultCard from './Resultcard.vue'
 
 defineProps({
   result: Object,
@@ -61,12 +67,21 @@ defineEmits(['share', 'reset'])
 </script>
 
 <style scoped>
-.animate-fadeIn {
-  animation: fadeIn 0.5s ease-in;
+.animate-pop-in {
+  animation: pop-in 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+@keyframes pop-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 </style>
