@@ -67,7 +67,7 @@ funny_app/
 
 ```bash
 # Cloner le projet
-git clone https://github.com/username/funny_app.git
+git clone https://github.com/BaldeAl/funny_app.git
 cd funny_app
 
 # Backend
