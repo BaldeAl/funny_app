@@ -113,7 +113,6 @@ GEMINI_API_KEY=votre_cle_api_gemini
 VITE_API_URL=http://localhost:8000
 ```
 
-![alt text](image.png)
 
 ---
 
