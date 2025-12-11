@@ -44,7 +44,7 @@ import BackgroundStars from './components/Backgroundstars.vue'
 import AppHeader from './components/Appheader.vue'
 import AppFooter from './components/Appfooter.vue'
 import NavigationTabs from './components/Navigationtabs.vue'
-import BoostTab from './components/Boostab.vue'
+import BoostTab from './components/Boosttab.vue'
 import HistoryTab from './components/Historytab.vue'
 import ToastNotification from './components/Toastnotification.vue'
 
